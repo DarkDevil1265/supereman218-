@@ -11,7 +11,7 @@ Pr0fess0r_99= Client(
 
 @Pr0fess0r_99.on_message(filters.command("start"))
 async def start(client: Pr0fess0r_99, update):
-    start_msg = "👋Hy {}, Iam Simple Auto Welcome Bot\n\nBot Owner Only /admin\n\nMaintained By @Mo_Tech_YT"
+    start_msg = "👋Hy {}, Iam Simple Auto Welcome Bot\n\nBot Owner Only /admin\n\nMaintained By @mallumovieby"
     bot_username = await client.get_me()
     link = "PR0FESS0R-99/Auto-Welcome-Bot"
     reply_markup = InlineKeyboardMarkup(
@@ -19,11 +19,11 @@ async def start(client: Pr0fess0r_99, update):
             [
                 InlineKeyboardButton
                     (
-                         "🤖More Bots", url="t.me/MT_Botz"
+                         "Movie", url="t.me/mallumovieby"
                     ),
                 InlineKeyboardButton
                     (
-                         "💡Open Source", url="https://github.com/{link}" # PR0FESS0R-99/Auto-Welcome-Bot
+                         "💡Open Source", url="https://github.com/DarkDevil1265/supereman218-" # PR0FESS0R-99/Auto-Welcome-Bot
                     )
             ],   
             [
@@ -78,7 +78,7 @@ async def admin(bot: Pr0fess0r_99, update):
             [
                 InlineKeyboardButton
                     (
-                        "💫 DEPLOY NOW 💫", url=f"https://youtu.be/{run}"
+                        "💫 DEPLOY NOW 💫", url=f"https://youtu.be/t2P-JtLwkuM"
                     )
             ]
         ]
@@ -99,7 +99,7 @@ async def auto_welcome(bot: Pr0fess0r_99, msg: Message):
     group_name = msg.chat.title
     group_username = msg.chat.username
     name_button = "🔰 JOIN NOW 🔰"
-    link_button = "t.me/Mo_tech_YT"
+    link_button = "t.me/malluinstaby"
     button_name = os.environ.get("WELCOME_BUTTON_NAME", name_button)
     button_link = os.environ.get("WELCOME_BUTTON_LINK", link_button)
     welcome_text = f"Hey {mention}\nWelcome To {group_name}"
@@ -142,6 +142,6 @@ async def auto_welcome(bot: Pr0fess0r_99, msg: Message):
 
 print("""Auto Welcome Bot Started
 
-Maintained By @Mo_Tech_YT""")
+Maintained By @mallumovieby""")
 
 Pr0fess0r_99.run()
